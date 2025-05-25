@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -111,7 +112,7 @@
           <div class="items col-lg-3" data-aos="fade-up">
             <img class="hs-img" src="images/hs.png" alt="Hubspot" />
           </div>
-          <div class="items col-lg-3" data-aos="fade-up" data-aos-delay="50">
+          <div class="items col-lg-3" data-aos="fade-up" data-aos-delay="50">     
             <img
               class="cloud-img"
               src="images/google-cloud.png"
@@ -128,15 +129,32 @@
       </div>
     </section>
     <!-- Core Service section start here  -->
-    <section class="branding__section">
+    <section class="core_service__section">
       <div class="container">
         <div class="row">
-          <div class="cntnt-section col-lg-4"></div>
-          <div class="slider-section col-lg-8"></div>
+          <div class="cntnt-section col-lg-4">
+              <div class="cntnt_inner">
+                <h3>Our Core <br>Services</h3>
+                <p>We offer a wide range of professional services to help your business succeed online.</p>
+                <div class="btn-section">
+                  <a href="#" class="btn primary-btn">
+                    View All Our Services
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="slider-section col-lg-8">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </body>
+  <script src="js/swiper.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </html>
