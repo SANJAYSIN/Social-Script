@@ -97,3 +97,6 @@ header .logo img {
   padding: 0;
 }
 
+.menu_section > nav > ul > li > a:hover i {
+  color: #01acf1;
+}
