@@ -1,0 +1,104 @@
+<<<<<<< Updated upstream
+=======
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #303036;
+}
+
+a {
+  color: #242427;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #01acf1;
+}
+
+img {
+  max-width: 100%;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-btn {
+  background-color: #01acf1;
+  border-radius: 50px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.primary-btn:hover {
+  border-color: #01acf1;
+  background: #ffffff;
+  color: #01acf1;
+}
+
+.header__main {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid #e3e3e5;
+}
+
+header .logo img {
+  max-width: 137px;
+}
+
+.contact-section .mail-section span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 2px;
+  font-weight: 600;
+}
+.contact-section .mail-section a {
+  font-size: 15px;
+}
+
+.contact-section > div {
+  padding: 0 30px;
+}
+
+.contact-section .mail-section {
+  padding-left: 0;
+}
+
+.contact-section > div:last-child {
+  padding: 0 0 0 30px;
+  border-left: 1px solid #e3e3e5;
+}
+
+.menu_section > nav > ul > li > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu_section > nav > ul > li > a i {
+  color: #79747e;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.menu_section > nav > ul > li {
+  padding: 0 17px 0 0px;
+}
+
+.menu_section > nav > ul > li:last-child {
+  padding: 0;
+}
+
+.menu_section > nav > ul > li > a:hover i {
+  color: #01acf1;
+}
+>>>>>>> Stashed changes
