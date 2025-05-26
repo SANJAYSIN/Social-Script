@@ -189,3 +189,175 @@ header .logo img {
 .branding__section .items .wp-img {
   max-width: 130px;
 }
+
+.core_service__section .service-item .service-inner {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  height: 100%;
+}
+.core_service__section .service-item .service-inner p {
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  z-index: 9;
+}
+.core_service__section .service-item .service-inner:after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.86) 87.02%
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.core_service__section .service-item .service-inner:hover img {
+  transform: scale(1.05);
+}
+.core_service__section .service-item .service-inner img {
+  min-height: 440px;
+  object-fit: cover;
+  transition: all 0.5s;
+  transform-origin: center;
+  transform: scale(1);
+  object-position: center;
+}
+.core_service__section {
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+.core_service__section .cntnt-section {
+  padding-left: 16%;
+}
+.core_service__section .swiper-wrapper {
+  display: flex;
+}
+.core_service__section .swiper-wrapper .service-item {
+  height: auto;
+}
+
+.solution-section {
+  padding-bottom: 100px;
+}
+.solution-section .solution-bg {
+  border-radius: 20px;
+  padding: 100px 68px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: -100% 0%;
+}
+.solution-section .solution-bg h3 {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+.solution-section .solution-bg p {
+  max-width: 400px;
+  font-weight: 300;
+}
+.solution-section .list-items:not(:last-child) {
+  margin-bottom: 40px;
+}
+.solution-section .list-items p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.solution-section .list-items span {
+  font-size: 14px;
+  display: block;
+  font-weight: 300;
+}
+.solution-section .solution-list {
+  padding-left: 100px;
+}
+
+.technology__section {
+  padding-bottom: 100px;
+}
+.technology__section .technology-item .inner {
+  padding: 40px 40px;
+  box-shadow: 4px 4px 14px 0px #00000010;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.technology__section .technology-item .inner:hover {
+  box-shadow: 10px 10px 14px 0px #00000050;
+  transform: translate(0, -5px);
+}
+.technology__section .technology-item .inner p {
+  margin: auto 0 0 0;
+  font-weight: 500;
+}
+.technology__section .technology-item .inner .logo {
+  margin-bottom: 13px;
+}
+.technology__section .technology-item {
+  margin-bottom: 20px;
+}
+
+.approach-section {
+  background: #000000;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.approach-section .btn-section {
+  padding-top: 500px;
+  position: relative;
+  z-index: 9;
+}
+.approach-section h3 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.approach-section p {
+  color: #fff;
+  margin: 0;
+}
+.approach-section a.btn.primary-btn:hover {
+  background: transparent;
+}
+.approach-section .human-hand {
+  transform: scale(-1, 1);
+}
+.approach-section .human-hand {
+  transform: scale(-1, 1);
+  max-width: 1027px;
+  position: absolute;
+  left: -700px;
+  bottom: -400px;
+  transition: all 4s;
+}
+.approach-section .robot-hand {
+  transform: scale(-1, 1) rotate(20deg);
+  position: absolute;
+  max-width: 900px;
+  right: -800px;
+  top: -220px;
+  transition: all 4s;
+}
+.approach-section.animate-active .human-hand {
+  left: 0;
+  bottom: 60px;
+}
+.approach-section.animate-active .robot-hand {
+  right: -37px;
+  top: 80px;
+}
