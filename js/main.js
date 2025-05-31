@@ -56,3 +56,16 @@ let lastScrollY = window.scrollY;
 
   const triggerElement = document.querySelector('.robot-section-offset');
   observer.observe(triggerElement);
+
+  // hamburgermenu
+
+const hamburger = document.querySelector('.hamburger-trigger');
+const nav = document.querySelector('.menu_section nav');
+
+if (hamburger && nav) {
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+  });
+}

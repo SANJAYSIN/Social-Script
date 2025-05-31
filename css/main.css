@@ -68,6 +68,7 @@ header ul {
   color: #ffffff;
   padding: 10px 20px;
   font-size: 14px;
+  border-color: #01acf1;
 }
 
 .primary-btn:hover {
@@ -360,4 +361,310 @@ header .logo img {
 .approach-section.animate-active .robot-hand {
   right: -37px;
   top: 80px;
+}
+
+.how-we-work h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.how-we-work p {
+  color: #555;
+}
+
+.how-we-work .icon-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.how-we-work .icon-box img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.how-we-work .icon-box h5 {
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+
+.how-we-work .icon-box p {
+  margin: 0;
+  color: #666;
+}
+
+.how-we-work {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.how-we-work h2.title {
+  color: #303036;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.how-we-work p.top-des {
+  letter-spacing: -0.24px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  color: #303036;
+}
+
+.how-we-work .icon-box .item h5 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  color: #303036;
+}
+
+.how-we-work .icon-box .item p {
+  letter-spacing: -0.16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #303036;
+}
+
+.how-we-work .imgbox .imgInner {
+  padding-left: 50px;
+}
+
+.blog-section {
+  background-color: #f8faff;
+  padding-top: 86px;
+  padding-bottom: 102px;
+}
+
+.blog-section h2 {
+  color: #303036;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.blog-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 320px;
+}
+
+.card-body {
+  padding: 50px 30px;
+}
+
+.blog-date {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #000;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  color: #303036;
+}
+
+.blog-desc {
+  color: #303036;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
+  letter-spacing: -0.16px;
+}
+
+.blog-readmore a {
+  color: #01acf1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 212.5% */
+  text-transform: capitalize;
+}
+
+.blog-readmore a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #111827;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer .col-inner {
+  padding: 0px 16px;
+}
+
+footer .col-inner h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #fff;
+}
+
+footer .col-inner p {
+  color: #fff;
+}
+
+footer .col-inner ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .col-inner ul li a {
+  color: #d1d5db;
+}
+
+footer .col-inner ul li:not(:first-child) {
+  margin-top: 8px;
+}
+footer .social-follow li a svg {
+  height: 24px;
+  width: 24px;
+}
+footer .social-follow li {
+  margin: 0 !important;
+}
+.hamburger-trigger {
+  display: none;
+}
+.hamburger-trigger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+.hamburger-trigger span {
+  display: block;
+  height: 2.2px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* When active (cross) */
+.hamburger-trigger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-trigger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -8px);
+}
+@media(max-wdith:1300px){
+  .menu_section > nav > ul > li {
+    padding: 0 0px 0 0px;
+}
+nav ul.gap-4 {
+    gap: 10px !important;
+}
+.contact-section .mail-section span {
+    text-align: right;
+    font-size: 12px;
+}
+.contact-section .mail-section a {
+    font-size: 12px;
+}
+.menu_section > nav > ul > li > a {
+    font-size: 12px;
+}
+.contact-section > div:last-child {
+    padding: 0 0 0 10px;
+}
+.contact-section a.btn.primary-btn {
+    font-size: 12px;
+}
+
+}
+@media (max-width: 991px) {
+  .menu_section nav {
+   position: absolute;
+  left: 0;
+  top: 13px;
+  width: 100%;
+  background-color: #f8faff;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  z-index: 99;
+  }
+  .menu_section nav.open {
+    display: block;
+    overflow: visible;
+    max-height: 500px;
+}
+  .menu_section {
+    position: relative;
+  }
+  .menu_section nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+
+  }
+  .menu_section nav ul li {
+    width: 100%;
+  }
+  .header__main .container .contact-section {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-we-work {
+    text-align: center;
+  }
+
+  .how-we-work .icon-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .how-we-work .icon-box h5,
+  .how-we-work .icon-box p {
+    text-align: center;
+  }
+  .hamburger-trigger{
+    right: 20px;
+  }
 }
