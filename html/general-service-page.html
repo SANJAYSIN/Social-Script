@@ -109,8 +109,8 @@
         class="container position-relative"
         style="margin-top: -200px; z-index: 2"
       >
-        <div class="row gy-4">
-          <div class="col-12 col-md-6 col-lg-4">
+        <div class="row gy-4 " style="row-gap: 100px;">
+          <div class="col-12 col-md-6 col-lg-4  px-4">
             <div class="card-inner">
               <div class="imgwrp">
                 <img
@@ -119,7 +119,7 @@
                 />
               </div>
               <div class="title">
-                <h5>Professional Logo Design</h5>
+                <h5>Professional Logo <br> Design</h5>
                 <div class="des">
                   <p>
                     Create a memorable brand identity with professionally
@@ -139,7 +139,7 @@
             </div>
           </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4  px-4">
             <div class="card-inner">
               <div class="imgwrp">
                 <img
@@ -148,7 +148,7 @@
                 />
               </div>
               <div class="title">
-                <h5>Professional Logo Design</h5>
+                <h5>Professional Logo br Design</h5>
                 <div class="des">
                   <p>
                     Create a memorable brand identity with professionally
@@ -168,7 +168,7 @@
             </div>
           </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4  px-4">
             <div class="card-inner">
               <div class="imgwrp">
                 <img
@@ -387,23 +387,24 @@
     </section>
     <!-- How We Work Section End -->
 
+        <!-- Faq Start -->
 
-    <section class="faq-section py-5 bg-dark text-white">
+    <section class="faq-section">
   <div class="container">
-    <div class="text-center mb-4">
+    <div class="text-center mb-4 topinner">
       <h2 class="fw-bold">Frequently Asked Questions About Website Development</h2>
-      <p class="text-muted">Have questions about our services? Find answers to common questions below.</p>
+      <p class="des">Have questions about our services? Find answers to common questions below.</p>
     </div>
-
+    
     <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
+      <div class="accordion-item active">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
             How long does it take to develop a custom theme?
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
+          <div class="accordion-body ">
             The timeline for custom theme development typically ranges from 2–4 weeks, depending on the complexity and specific requirements of the project. We'll provide you with a detailed timeline during the consultation phase.
           </div>
         </div>
@@ -417,7 +418,7 @@
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
+          <div class="accordion-body ">
             The timeline may vary depending on requirements.
           </div>
         </div>
@@ -430,7 +431,7 @@
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
+          <div class="accordion-body ">
             It generally takes 2–4 weeks depending on complexity.
           </div>
         </div>
@@ -443,7 +444,7 @@
           </button>
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-muted">
+          <div class="accordion-body ">
             Custom timelines are shared during consultation.
           </div>
         </div>
@@ -452,7 +453,8 @@
   </div>
 </section>
 
- 
+         <!-- Faq End -->
+
    <!-- Branding Logo section start here  -->
     <section class="branding__section">
       <div class="container">
@@ -650,10 +652,44 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".faq-section .accordion-item button.accordion-button");
+      
+        buttons.forEach(function (button) {
+          // Create SVG wrapper element
+          const svgWrap = document.createElement("span");
+          svgWrap.classList.add("faq-toggle-icon");
+          svgWrap.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="15" viewBox="0 0 28 15" fill="none">
+              <path d="M2 1.88477L14 13.8848L26 1.88477" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+          `;
+          // Insert before text
+          button.insertBefore(svgWrap, button.firstChild);
+      
+          // Add click event
+          button.addEventListener("click", function () {
+            const currentItem = button.closest(".accordion-item");
+      
+            // Remove .active from all siblings
+            const allItems = currentItem.parentElement.querySelectorAll(".accordion-item");
+            allItems.forEach(item => {
+              if (item !== currentItem) {
+                item.classList.remove("active");
+              }
+            });
+      
+            // Toggle active on current
+            currentItem.classList.toggle("active");
+          });
+        });
+      });
+    </script>
   </body>
   <script src="js/swiper.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
   <script src="/js\bootstrap.bundle.min.js"></script>
 
 </html>

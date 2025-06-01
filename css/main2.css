@@ -43,7 +43,7 @@ section.hero-section.text-center.serviceBnr {
 }
 
 .resulted-section .card-inner .title {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .resulted-section .card-inner .title h5 {
@@ -54,7 +54,6 @@ section.hero-section.text-center.serviceBnr {
     color: #292669;
     margin-bottom: 15px;
 }
-
 .resulted-section .card-ignner .des p {
     letter-spacing: -0.21px;
     font-size: 21px;
@@ -63,11 +62,9 @@ section.hero-section.text-center.serviceBnr {
     line-height: 28px;
     color: #303036;
 }
-
 .resulted-section .card-inner ul {
     padding-left: 20px;
 }
-
 .resulted-section .card-inner ul li {
     letter-spacing: -0.16px;
     font-size: 16px;
@@ -75,19 +72,17 @@ section.hero-section.text-center.serviceBnr {
     font-weight: 400;
     line-height: 41px;
 }
-
 .resulted-section .card-inner ul li::marker {
     color: #01ACF1;
 }
-
 .resulted-section .card-inner .btn-wrp {
     margin-top: 30px;
 }
 .faq-section {
-  background-color: #111111;
+  background: #18171B;
   color: #ffffff;
+  padding: 100px 0px;
 }
-
 .faq-section .accordion-button {
   background-color: transparent;
   color: #ffffff;
@@ -97,23 +92,54 @@ section.hero-section.text-center.serviceBnr {
   box-shadow: none;
   padding: 1rem;
 }
-
 .faq-section .accordion-button:not(.collapsed) {
   background-color: transparent;
   color: #ffffff;
 }
-
 .faq-section .accordion-body {
-  background-color: transparent;
-  padding: 1rem;
-  font-size: 14px;
-  color: #bbbbbb;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; 
+  letter-spacing: -0.16px;
+  margin-bottom: 40px;
+  padding: 0;
 }
-
+.faq-section .topinner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-section .topinner h2 {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  color: #FFF;
+  text-align: center;
+}
 .faq-section .accordion-item {
-  background-color: transparent;
-  border: 1px solid #2a2a2a;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  overflow: hidden;
+  background: #18171B;
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+.faq-section .accordion-item button.accordion-button {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  padding: 30px 0px;
+}
+.faq-section .accordion-item button.accordion-button span.faq-toggle-icon {
+  position: absolute;
+  right: 0;
+}
+.faq-section .accordion-item button::After {
+  opacity: 0;
+}
+.faq-section .accordion-item.active span.faq-toggle-icon {
+  transform: rotate(180deg);
 }
