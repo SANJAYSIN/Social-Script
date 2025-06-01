@@ -143,3 +143,23 @@ section.hero-section.text-center.serviceBnr {
 .faq-section .accordion-item.active span.faq-toggle-icon {
   transform: rotate(180deg);
 }
+
+
+@media(max-width:767px){
+  section.hero-section.text-center.serviceBnr {
+    padding-bottom: 300px;
+}
+
+section.hero-section.text-center.serviceBnr h2 {
+    font-size: 40px;
+}
+
+section.faq-section {
+    padding: 50px 0px;
+}
+
+.faq-section .topinner h2 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+}
