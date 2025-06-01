@@ -1,0 +1,119 @@
+.hero-section {
+  background-color: #f5f9ff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.hero-section.text-center.serviceBnr {
+    min-height: 550px;
+}
+.resulted-section .card-inner {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.07);
+    padding: 30px 30px;
+    position: relative;
+    padding-bottom: 60px;
+      transition: transform 0.3s ease;
+
+}
+.resulted-section .card-inner:hover {
+  transform: translateY(-5px);
+}
+.resulted-section .card-inner .imgwrp {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    background: #D7FEEA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(20px, -50px);
+}
+
+.resulted-section .card-inner .imgwrp img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    aspect-ratio: 60.86/61.19;
+}
+
+.resulted-section .card-inner .title {
+    padding-top: 30px;
+}
+
+.resulted-section .card-inner .title h5 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    color: #292669;
+    margin-bottom: 15px;
+}
+
+.resulted-section .card-ignner .des p {
+    letter-spacing: -0.21px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    color: #303036;
+}
+
+.resulted-section .card-inner ul {
+    padding-left: 20px;
+}
+
+.resulted-section .card-inner ul li {
+    letter-spacing: -0.16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+.resulted-section .card-inner ul li::marker {
+    color: #01ACF1;
+}
+
+.resulted-section .card-inner .btn-wrp {
+    margin-top: 30px;
+}
+.faq-section {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.faq-section .accordion-button {
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  padding: 1rem;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.faq-section .accordion-body {
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.faq-section .accordion-item {
+  background-color: transparent;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
