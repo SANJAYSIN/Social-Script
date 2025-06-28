@@ -80,7 +80,7 @@ header ul {
 .header__main {
   position: sticky;
   top: 0;
-  z-index: 9;
+  z-index: 99;
   width: 100%;
   padding: 12px 0;
   border-bottom: 1px solid #e3e3e5;
@@ -170,6 +170,9 @@ header .logo img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.mob-bnr-img {
+  display: none;
 }
 
 .branding__section {
@@ -693,6 +696,31 @@ footer .col-inner ul li a:hover {
   .solution-section .solution-list {
     padding-left: 00;
   }
+  .hero_section .mob-bnr-img {
+    display: block;
+  }
+  .hero_section {
+    background-image: unset !important;
+  }
+  .hero_section .mob-bnr-img {
+    flex: 100%;
+  }
+  .hero_section .cntnt-inner-section {
+    flex: 100%;
+  }
+  .hero_section .content_section {
+    flex-wrap: wrap;
+  }
+  .hero_section .mob-bnr-img img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .hero_section .row {
+    min-height: unset !important;
+    padding: 30px 0 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -752,10 +780,12 @@ footer .col-inner ul li a:hover {
     font-size: 30px;
   }
   .solution-section .solution-bg h3 {
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 14px;
   }
   .technology__section h3 {
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   .technology__section {
     padding-bottom: 35px;
@@ -781,7 +811,7 @@ footer .col-inner ul li a:hover {
   }
 
   .approach-section .btn-section {
-    padding-top: 100px;
+    padding-top: 30px;
   }
 
   .how-we-work h2.title {
@@ -829,5 +859,43 @@ footer .col-inner ul li a:hover {
 
   footer .col-inner {
     padding: 0;
+  }
+  .core_service__section .cntnt_inner {
+    text-align: center;
+    padding-top: 30px;
+  }
+  section.solution-section {
+    padding: 0 15px;
+  }
+  section.solution-section .solution-list .list-items {
+    display: block !important;
+  }
+  section.solution-section .solution-list .list-items .icon {
+    margin-bottom: 10px;
+  }
+  .solution-section .solution-bg p {
+    font-size: 14px;
+  }
+  .solution-section .solution-bg {
+    gap: 15px !important;
+  }
+  section.solution-section {
+    margin-bottom: 40px;
+  }
+  .technology__section .col-12 {
+    margin: 0 0 10px !important;
+  }
+  .technology__section .technology-item .inner {
+    padding: 20px 30px;
+  }
+  .approach-section h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  .approach-section p {
+    font-size: 14px;
+  }
+  header .logo img {
+    max-width: 87px;
   }
 }
