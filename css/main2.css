@@ -145,7 +145,47 @@ section.hero-section.text-center.serviceBnr {
 .faq-section .accordion-item.active span.faq-toggle-icon {
   transform: rotate(180deg);
 }
+section.contact-section-new {
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+section.contact-section-new .contact-info {
+    margin-top: 50px;
+}
+section.contact-section-new  .form-main {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 29.1px 0px rgba(0, 0, 0, 0.17);
+    padding: 53px 60px;
+}
+input.cm-input,
+textarea.cm-input {
+    border: 0;
+    border-bottom: 2px solid;
+    display: inline-block;
+    width: 100%;
+    min-height: 50px;
+}
+input.cm-input:focus,
+textarea.cm-input:focus {
+  outline: 0;
+}
 
+form .col-12.btnform button {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media(max-width:991px){
+  section.contact-section-new {
+    padding-top: 50px;
+}
+}
 @media (max-width: 767px) {
   section.hero-section.text-center.serviceBnr {
     padding-bottom: 300px;
@@ -216,4 +256,25 @@ section.hero-section.text-center.serviceBnr {
   .faq-section .accordion-body {
     font-size: 14px;
   }
+  section.contact-section-new {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+section.contact-section-new h2 {
+    font-size: 30px;
+}
+
+section.contact-section-new .form-main {
+    padding: 25px;
+}
+
+section.contact-section-new .form-main h4 {
+    font-size: 21px;
+}
+
+form .col-12.btnform button {
+    padding: 12px;
+    font-size: 15px;
+}
 }
