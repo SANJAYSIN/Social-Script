@@ -152,9 +152,11 @@ section.hero-section.text-center.serviceBnr {
   }
 
   section.hero-section.text-center.serviceBnr h2 {
-    font-size: 34px;
+    font-size: 24px;
   }
-
+  section.hero-section.text-center.serviceBnr p.des {
+    font-size: 14px;
+  }
   section.faq-section {
     padding: 50px 0px;
   }
@@ -168,7 +170,7 @@ section.hero-section.text-center.serviceBnr {
     padding-bottom: 250px !important;
   }
   .resulted-section .row {
-    gap: 60px !important;
+    gap: 40px !important;
   }
   .faq-section .accordion-item button.accordion-button span.faq-toggle-icon {
     right: 0;
@@ -180,5 +182,38 @@ section.hero-section.text-center.serviceBnr {
   }
   .faq-section .topinner h2 {
     font-size: 24px;
+  }
+  section.hero-section.text-center.serviceBnr {
+    min-height: 500px;
+  }
+  .resulted-section .card-inner .imgwrp {
+    transform: translate(20px, -40px);
+    width: 80px;
+    height: 80px;
+  }
+  .resulted-section .card-inner .title {
+    padding-top: 30px;
+  }
+  .resulted-section .card-inner {
+    padding-bottom: 30px;
+  }
+  .resulted-section .card-inner .imgwrp img {
+    width: 40px;
+    height: 40px;
+  }
+  .faq-section .accordion-item button.accordion-button span.faq-toggle-icon {
+    top: 20px;
+  }
+  .faq-section .accordion-item:last-child {
+    border: 0;
+  }
+  section.faq-section {
+    padding-bottom: 30px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .faq-section .accordion-body {
+    font-size: 14px;
   }
 }
