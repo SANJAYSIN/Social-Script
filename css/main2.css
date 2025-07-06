@@ -256,13 +256,166 @@ section.seo-services-cards .service-card > * {
 section.seo-services-cards .service-card h5 {
     font-size: 18px;
 }
+.two-column-seo-botttom.how-we-work .imgbox .imgInner {
+    padding: 0;
+}
+.two-column-seo-botttom .inner_wrp {
+    padding-left: 100px;
+}
+.two-column-seo-botttom .inner_wrp .d-flex {
+    row-gap: 80px;
+}
+
+.menu_section > nav > ul > li.has-children {
+    position: relative;
+}
 
 
+.menu_section > nav > ul ul.submenu li >a {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 20px;
+}
 
+.menu_section > nav > ul ul.submenu li >a:hover {
+    background: #01ACF1;
+    color: #fff;
+}
+
+.menu_section > nav > ul ul.submenu li {
+    width: 100%;
+}
+
+
+.menu_section > nav > ul ul.submenu li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.menu_section > nav > ul ul.submenu {
+  position: absolute;
+  min-width: 291px;
+  background: #FFF;
+  box-shadow: 0px 6px 20.6px rgba(0, 0, 0, 0.14);
+  top: 65px;
+  left: 0;
+  flex-wrap: wrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 99;
+
+}
+
+/* On hover */
+.menu_section > nav > ul > li.has-children:hover > ul.submenu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.menu_section > nav > ul > li.has-children:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    z-index: 1;
+}
+
+.menu_section > nav > ul > li.has-children {
+    z-index: 2;
+}
+.menu_section > nav > ul > li > a {
+    position: relative;
+    z-index: 9;
+}
 
 @media(max-width:991px){
   section.contact-section-new {
     padding-top: 50px;
+}
+.banner-type2-section.two-column {
+    padding: 0;
+}
+section.seo-services-cards {
+    padding: 40px 0px;
+}
+.two-column-seo-botttom .inner_wrp {
+    padding: 0;
+    padding-top: 20px;
+}
+
+.two-column-seo-botttom .inner_wrp .d-flex {
+    row-gap: 0px;
+}
+
+
+section.faq-section {
+    padding: 40px 0px;
+}
+
+.faq-section .topinner h2 {
+    font-size: 40px;
+}
+.two-column.banner-type2-section .des {
+    margin: 0;
+}
+
+section.how-we-work.Our-Process.two-column-seo-botttom {
+    padding-top: 0;
+}
+
+section.seo-services-cards {
+    padding-bottom: 0;
+}
+.menu_section > nav > ul > li > a {
+    position: relative;
+    z-index: 9;
+}
+
+.menu_section > nav > ul > li.has-children:after {
+    display: none;
+}
+
+.menu_section > nav > ul ul.submenu {
+    position: static;
+    display: none;
+    min-width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: unset;
+    padding: 0;
+}
+
+.menu_section > nav > ul > li.has-children:hover > ul.submenu {
+    display: none  ;
+    transform: unset;
+}
+
+.menu_section > nav > ul > li.has-children .fa-caret-down {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu_section > nav > ul > li > a {
+    width: 100%;
+}
+.menu_section > nav > ul > li.has-children.sub-show ul {
+  display: block !important;
 }
 }
 @media (max-width: 767px) {
@@ -355,5 +508,15 @@ section.contact-section-new .form-main h4 {
 form .col-12.btnform button {
     padding: 12px;
     font-size: 15px;
+}
+
+
+section.seo-services-cards .service-card {
+    padding: 35px;
+}
+
+.menu_section > nav > ul ul.submenu li >a {
+  font-size: 13px;
+  padding: 6px 20px;
 }
 }

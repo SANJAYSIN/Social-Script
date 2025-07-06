@@ -1,9 +1,35 @@
+  // hamburgermenu
+
+const hamburger = document.querySelector('.hamburger-trigger');
+const nav = document.querySelector('.menu_section nav');
+
+if (hamburger && nav) {
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+  });
+}
+
+const links = document.querySelectorAll('.menu_section > nav > ul > li.has-children .fa-caret-down');
+
+links.forEach(elm => {
+  elm.addEventListener('click', function (e) {
+    e.preventDefault();
+let elmparent = elm.closest('.has-children');
+elmparent.classList.toggle('sub-show')
+  }); 
+});
+
+
 AOS.init({
   duration: 1200,
   once: true,
   offset: 100,
 });
 window.addEventListener("load", AOS.refresh);
+
+
 
 $(document).ready(function () {
   new Swiper(".core_service__section .swiper-container", {
@@ -56,17 +82,4 @@ let lastScrollY = window.scrollY;
 
   const triggerElement = document.querySelector('.robot-section-offset');
   observer.observe(triggerElement);
-
-  // hamburgermenu
-
-const hamburger = document.querySelector('.hamburger-trigger');
-const nav = document.querySelector('.menu_section nav');
-
-if (hamburger && nav) {
-  hamburger.addEventListener('click', function () {
-    hamburger.classList.toggle('active');
-    nav.classList.toggle('open');
-    document.body.classList.toggle('menu-open');
-  });
-}
 
